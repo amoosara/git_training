@@ -1,2 +1,13 @@
 This is a index file
+<<<<<<< HEAD
 This is a new line
+=======
+This is a index file
+This is a index file
+This is a index file
+This is a index file
+This is a index file
+This is a index file
+This is a index file
+This is a index file
+>>>>>>> master
