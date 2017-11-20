@@ -1,0 +1,17 @@
+#
+# This file built automatically by setup on Mon Nov 13 03:04:19 2017 IST.
+# Do not attempt to modify by hand.
+#
+# Generated from inclusion of config/prefix/etc/hosts
+#
+# $Id: hosts,v 1.17 2015/06/10 01:20:35 pkrizak Exp $
+#
+# Internet Hosts Table.
+#
+# Localhost
+#
+127.0.0.1	localhost
+# Generated from inclusion of config/duty/bait.qipl-salt/etc/hosts
+10.4.26.186 bait-salt-hyd  bait-salt-hyd.qualcomm.com 
+# Generated from inclusion of etc/duty/android.hyd/hosts
+10.252.0.16 	git-android-hyd.qualcomm.com git-android-hyd.quicinc.com git.quicinc.com git-android.quicinc.com git-android-hyd
