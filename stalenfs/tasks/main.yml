@@ -1,0 +1,13 @@
+---
+  - name: Delete file {{ STALE_MOUNTS }}
+    file: name={{ STALE_MOUNTS }} state="absent"
+
+  - name: Copy the NFS check script to the Clients
+    script: "{{ CHK_STALE_MOUNTS_SCRIPT }}"
+
+  - shell: '/bin/cat {{ STALE_MOUNTS }}'
+    register: out
+
+  - name: Delete the stale NFS mount entries from /etc/mtab
+    lineinfile: "dest=/etc/mtab backup=yes state=absent regexp={{ item }}"
+    with_items: '{{ out.stdout_lines }}'
